@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+	<title>Firefox</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+ <!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+<body style="background: #F8F8FF; color: black">
+	<div class="firefox-icon">
+		<img src="images/firefox.svg" height="250" width="250"/><br>
+			</div>
+		  <div class="message-second">
+		MESSAGE:<br>Complete the second puzzle to move on.<br>Click the puzzle piece below.<br><br><br><br>
+	    <div class="container">
+			<div class="row">
+				<div class="col-md-3 pb-4 pt-4">
+				<img src="images/spotify.svg" height="120" width="120">
+					</div>
+				<div class="col-md-3 pb-4 pt-4">
+				<img src="images/discord.svg" height="120" width="120">
+					</div>
+				<div class="col-md-3 pb-4 pt-4">
+				<img src="images/instagram.svg" height="120" width="120">
+					</div>
+				<div class="col-md-3 pb-4 pt-4">
+				<img src="images/twitter.svg" height="120" width="120">
+					</div>
+				<div class="col-md-3 pb-4 pt-4 mt-5">
+				<img src="images/dropbox.svg" height="120" width="120">
+					</div>
+				<div class="col-md-3 pb-4 pt-4 mt-5">
+				<a href="" data-toggle="modal" data-target="#myModal"><img src="images/fit.svg" height="120" width="120"></a>
+					</div>
+				<div class="col-md-3 pb-4 pt-4 mt-5">
+				<img src="images/facebook.svg" height="120" width="120">
+					</div>
+				</div>
+			</div>
+	</div>
+	<!-- The Modal -->
+  <div class="modal font-color" id="myModal">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content body-background">
+      
+        <!-- Modal Header -->
+        <div class="modal-header header-background">
+          <h4 class="modal-title">System Question:</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body body-background">
+          <p class="puzzle-q"><img src="../images/wrong.svg" height="50px" width="50px"> 
+			<span class="ml-4">What is the most popular video sharing platform on the web?</span></p>
+			<div class="puzzel2">
+			<form>
+        <input type="radio" name="facebook" id="facebook"
+            value="Facebook">Facebook<br> 
+          
+        <input type="radio" name="Youtube" id="youtube"
+            value="Youtube">Youtube<br> 
+          
+        <input type="radio" name="google" id="google"
+            value="Google">Google<br><br> 
+      
+        <button type="button" onclick="display()"> 
+            Submit 
+        </button> 
+			</form>
+				</div>
+			</div>
+
+        </div>
+        
+        
+      </div>
+    </div>
+    <br> 
+   
+	 <script> 
+        function display() {  
+            if(document.getElementById('facebook').checked) { 
+               alert("That is incorrect! Try Again.");
+				document.getElementById("facebook").checked = false;
+            } 
+            else if(document.getElementById('youtube').checked) { 
+                alert("That is correct! Good Job!");
+				window.location = "completed_secondPuzzle.html";
+            } 
+            else if(document.getElementById('google').checked) { 
+                alert("That is incorrect! Try Again.");
+				document.getElementById("google").checked = false;
+            } 
+            else { 
+                alert("You need to select something....")
+            } 
+        } 
+    </script>
+	</body>
+</html>

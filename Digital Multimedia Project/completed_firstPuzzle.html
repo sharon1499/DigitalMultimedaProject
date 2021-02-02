@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+	<title>Desktop</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+ <!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<div class="row fix-scroll">
+	  <div class="col-2">
+	<a href="firefox.html"><img src="images/firefox.svg" height="100rem" width="100rem" class="home-icons mt-5"/></a><br>
+	<img src="images/itunes.svg" height="100rem" width="100rem" class="home-icons"/><br>
+	<img src="images/python.svg" height="100rem" width="100rem" class="home-icons"/><br>
+	<img src="images/folder.svg" height="100rem" width="100rem" class="mb-3"/><br>
+		</div>
+		<div class="col-9">
+			<p class="first-puzzle">MESSAGE:<br>You completed the first task!<br>Click the key to retrieve it</p>
+			<div class="key1">
+				<img src="WhiteKeys/SVG/Puzzle 1.svg" height="300" width="300" id="key1" onclick="retrieveKey1();"/>
+				<p id=mes2></p>
+			</div>
+		</div>
+	</div>
+	<script>
+		function retrieveKey1(){
+		alert("You have successfully retrieved the key!");
+		var x = document.getElementById("key1");
+         x.style.display = "none";
+		 x.style.left = "54%";
+		document.getElementById("mes2").innerHTML = "Proceed to Firefox";
+		}
+	</script>
+</body>
+</html>

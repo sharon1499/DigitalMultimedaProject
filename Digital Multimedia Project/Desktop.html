@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+		<title>Desktop</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+ <!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<div class="row fix-scroll">
+	  <div class="col-2">
+	<img src="../images/firefox.svg" height="100rem" width="100rem" class="home-icons mt-5"/><br>
+	<img src="../images/itunes.svg" height="100rem" width="100rem" class="home-icons"/><br>
+	<img src="../images/python.svg" height="100rem" width="100rem" class="home-icons"/><br>
+	<a href="resources.html"><img src="../images/folder.svg" height="100rem" width="100rem" class="mb-3"/></a><br>
+		</div>
+		<div class="col-9">
+			<p class="info">Task to complete:<br> In order to escape the computer you must figure out each<br>puzzle presented to you. Below is your first puzzle.<br>
+			 <button type="button" class="btn btn-primary mt-4" data-toggle="modal" data-target="#myModal">
+    Puzzle 1
+				</button></p>
+		</div>
+	</div>
+	<!-- The Modal -->
+  <div class="modal font-color" id="myModal">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content body-background">
+      
+        <!-- Modal Header -->
+        <div class="modal-header header-background">
+          <h4 class="modal-title">System Question:</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body body-background">
+          <p class="puzzle-q"><img src="../images/wrong.svg" height="50px" width="50px"> 
+			<span class="ml-4">Name a browser that can be used to navigate through the internet.</span></p>
+			<p class="answer-margin">Answer: <input type="text" id="answer" name="answer"></p>
+			<div class="button-format"><button type="button" class="btn btn-outline-dark" onclick="correct_answer()">Submit</button></div>
+
+        </div>
+        
+        
+      </div>
+    </div>
+  </div> 
+
+	<script> 
+          
+        function correct_answer() { 
+            var str1 = document.getElementById("answer"); 
+			
+			if(str1.value == "firefox"){
+				alert("Correct!");
+				window.location = "completed_firstPuzzle.html";
+			}
+			else{
+				alert("Incorrect!");
+			}
+        } 
+    </script>
+	<footer class="footer-edit">
+			<div class="footer-time">
+				5:05 PM<br>
+				3/27/2020
+			</div>
+		</div>
+	</footer>
+</body>
+</html>

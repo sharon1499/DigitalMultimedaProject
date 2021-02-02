@@ -1,0 +1,24 @@
+puzzle 1:
+firefox
+
+puzzle 2:
+youtube
+
+puzzle 3:
+Q1: modify and inspect or inspect and modify
+Q2: css and html or html and css
+
+puzzle 4:
+ipconfig
+
+puzzle 5:
+142.4
+
+final answer:
+solve
+
+
+
+fixes needed:
+check if caps or not.
+make only one radio option selectable.

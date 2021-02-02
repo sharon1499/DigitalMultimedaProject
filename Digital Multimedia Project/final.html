@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+	<title>Final</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+ <!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<div class="container">
+		<div class="final-message">
+			<h1>MESSAGE:</h1>
+			You have made it so far! <br>Your final task is to put the password in below by using the keys letters.
+		</div>
+		<div class="row">
+			<div class="col-xs-2">
+				<input type="text" id="ip1"/></div>
+				<div class="col-xs-2">
+					<input type="text" id="ip2"/></div>
+				<div class="col-xs-2">
+					<input type="text" id="ip3"/></div>
+				<div class="col-xs-2">
+					<input type="text" id="ip4"/></div>
+				<div class="col-xs-2">
+				<input type="text" id="ip5"/>
+			</div>
+
+			<div class="col-xs-2">
+				<img src="WhiteKeys/SVG/Puzzle 4.svg" width="350" height="350" style="margin-right: -7em; margin-left: -5em;">
+			</div>
+			<div class="col-xs-2">
+				<img src="WhiteKeys/SVG/Puzzle 2.svg" width="350" height="350" style="margin-right: -7em">
+			</div>
+			<div class="col-xs-2">
+				<img src="WhiteKeys/SVG/Puzzle 1.svg" width="350" height="350" style="margin-right: -7em">
+			</div>
+			<div class="col-xs-2">
+				<img src="WhiteKeys/SVG/Puzzle 5.svg" width="350" height="350" style="margin-right: -7em">
+			</div>
+			<div class="col-xs-2">
+				<img src="WhiteKeys/SVG/Puzzle3.svg" width="350" height="350" style="margin-right: -7em">
+			</div>
+		</div>
+		<button type="button" class="btn btn-success" style="margin-top: -10rem; margin-left: 30rem;" onclick="final_answer();">Submit</button>
+	</div>
+	<script> 
+          
+        function final_answer() { 
+            var str1 = document.getElementById("ip1");
+			var str2 = document.getElementById("ip2"); 
+			var str3 = document.getElementById("ip3"); 
+			var str4 = document.getElementById("ip4"); 
+			var str5 = document.getElementById("ip5"); 
+			
+			if(str1.value == "s" && str2.value == "o" && str3.value == "l" && str4.value == "v" && str5.value == "e"){
+				alert("Thats Correct! You have succesfully entered the password!");
+				window.location = "exit.html";
+			}
+			else{
+				alert("Incorrect! Try Again");
+			}
+        } 
+    </script>
+</body>
+</html>
