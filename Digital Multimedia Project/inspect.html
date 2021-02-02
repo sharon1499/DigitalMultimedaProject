@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+	<title>Inspect</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+ <!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+		<img src="images/inspect.png" height="760" width="100%">
+	<div class="fourthPuzzle">
+		<h1>MESSAGE:</h1>
+		<strong>Complete the fourth puzzle to move on.</strong>
+	</div>
+	<div class="container mt-5">
+		<div class="row">
+			<div class="col p-5" style="border: 2px solid white; border-radius: 10px">
+				<h3>Question: 1</h3>
+				What command on the terminal line do you have to input in order to see your IP Address?<br><br>
+				<form>
+					<input type="text" id="P4" name="answer">
+					<button type="button" onclick="Puzzle4_Answer();">Submit</button>
+				</form>
+			</div>
+		</div>
+	</div>
+	<script> 
+          
+        function Puzzle4_Answer() { 
+            var a4 = document.getElementById("P4"); 
+			
+			if(a4.value == "ipconfig"){
+				alert("Correct!");
+				window.location = "complteted_fourthPuzzle.html";
+			}
+			else{
+				alert("Incorrect!");
+			}
+        } 
+    </script>
+		
+</body>
+</html>
